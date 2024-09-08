@@ -1,0 +1,115 @@
+body {
+  background-color: wheat;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#first_column {
+  float: left;
+  width: 30%;
+}
+#second_column {
+  float: left;
+  width: 30%;
+}
+
+/*Game map*/
+#area_description {
+  padding: 2px;
+}
+#map {
+  background-color: saddlebrown;
+  color: white;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+#player_status {
+  font-weight: normal;
+  padding: 5px;
+}
+
+
+.center {
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  margin: auto;
+}
+
+button {
+  background-color: saddlebrown;
+  border-color: saddlebrown;
+  color: white;
+}
+
+.navigation {
+  z-index: 50;
+  width: 35px;
+  height: min-content;
+  text-align: center;
+}
+
+.tile {
+  position: relative;
+  width: 70px; height: 70px;
+  text-align: center;
+}
+
+
+/*Terrains*/
+td.light_forest {
+  background-color: rgb(0, 156, 0);
+}
+td.forest {
+  background-color: green;
+}
+td.dense_forest {
+  background-color: darkgreen;
+}
+td.plains {
+  background-color: olivedrab;
+}
+td.hill {
+  background-color: olive;
+}
+td.steep_hill {
+  background-color: darkolivegreen;
+}
+td.marsh {
+  background-color: seagreen;
+}
+td.river, td.shallow_lake {
+  background-color: rgb(40, 36, 253);
+}
+td.coast, td.deep_lake {
+  background-color: blue;
+}
+td.ocean {
+  background-color: navy;
+}
+td.mountain {
+  background-color: gray;
+}
+td.void {
+  background-color: black;
+}
+
+/*Features*/
+div.cave_entrance, div.cave_exit {
+  z-index: 30;
+  height: 40%; width: 40%;
+  background-color: black;
+  border: 16px inset gray;
+  border-bottom: 8px outset white;
+}
+div.pit {
+  z-index: 30;
+  height: 60%; width: 60%;
+  background-color: black;
+  border: 5px inset black;
+}
+div.boulder {
+  z-index: 30;
+  height: 40%; width: 40%;
+  background-color: gray;
+  border: 15px outset black;
+}

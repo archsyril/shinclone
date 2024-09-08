@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+FILES=game/cgi/*.nim
+
+for full_fn in $FILES
+do
+  if [[ "$f" != *\.* ]]
+  then
+    just_fn=$(basename -- "${full_fn::-4}")
+    nim r --path:"." -d:release --out:/usr/lib/cgi-bin/$just_fn.cgi /var/www/html/$full_fn
+  fi
+done
+
+chmod a+w data.sqlite
+
