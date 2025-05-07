@@ -1,1 +1,3 @@
 Crazy shintolin clone I made progress on, but got discouraged after I figured I was doing it inefficiently......
+
+will i ever  work on it again?
